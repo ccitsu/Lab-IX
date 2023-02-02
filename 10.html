@@ -1,0 +1,25 @@
+<html>
+   <head>  
+      <script type = "text/javascript">
+         function concatenate(first, last) {             // Function calls another function
+            var full;
+            full = first + last;
+            return full;
+         }
+         function secondFunction() {
+            var result;
+            var fname = prompt("Enter the First Name: ")
+            var lname = prompt("Enter the Last name: ")
+            result = concatenate(fname, lname);
+            document.write (result );
+         }
+      </script>      
+   </head>
+   <body>
+      <p>Function Call!!</p>      
+      <form>
+         <input type = "button" onclick = "secondFunction()" value = "Call Function">
+      </form>      
+      <p>Function Call from a Function!</p>  
+  </body>
+</html>
